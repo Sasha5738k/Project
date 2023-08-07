@@ -25,12 +25,19 @@
         justify-content: space-around;
         align-items: center;  
     }
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
     footer {
         margin-bottom: -7px;
         background-color: rgba(255, 179, 0, 0.625);
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+    .me {
+        margin-left: 550px;   
     }
     .nav {
         font-size: 22px;
@@ -47,42 +54,18 @@
         color: black;
         font-size: 22px;
     }
-    input,textarea {
-        display: block;
-        width: 400px;
-        resize: none;
-        border-radius: 17px;
-        height: 30px;
-        margin-top: 30px;
-        padding: 5px;
+    .images {
+        width: 400;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
     }
-    form {
-        margin-bottom: 100px;
-        margin-top: 100px;
-        background: black;
-        width: 410px;
-        padding: 50px;
-        border-radius: 17px;
-        margin-left: 400px;
-    }
-    h2 {
-        margin-left: 150px;
-        color: rgba(255, 179, 0, 0.625);
-    }
-    button {
-        width: 150px;
-        height: 30px;
-        margin-left: 140px;
-        margin-top: 30px;
-        border: none;
+    .images img {
         transition: 2s;
     }
-    button:hover {
-        font-size: 22px;
-        border-radius: 17px;
-        color: white;
-        background-color: rgba(255, 179, 0, 0.625);
-        cursor: pointer;
+    .images img:hover {
+        transform: scale(1.2);
     }
   </style>
 <body>
@@ -103,14 +86,26 @@
           <li><a class="tg" target="_blank" href="https://t.me/Safat2241">Мій Телеграм</a></li>
         </ul>
     </header>
-    <form action="">
-        <h2>Записатися</h2>
-        <input placeholder="Ваше ім'я" type="text">
-        <input placeholder="Телефон" type="text">
-        <textarea placeholder="Повідомлення" name="" id="" cols="30" rows="10"></textarea>
-        <button>Відправити</button>
-    </form>
-
+    
+    <ul class="images">
+        <li>
+            <img width="500" src="./image1.jpg" alt="">
+            <h2>Web development</h2>     
+        </li>
+        <li>
+            <img width="500" src="./image2.jpg" alt="">
+            <h2>Software Development</h2>
+        </li>
+        <li>
+            <img width="500" src="./image3.jpg" alt="">
+            <h2>Game Development</h2> 
+        </li>
+        <li>
+            <img width="500" src="./image4.jpg" alt="">
+            <h2>Mobile Development</h2>
+        </li>
+    </ul>
+    
     <footer>
         <a href="./index.html">
             <img width="50" src="./photo.jpeg" alt="">
